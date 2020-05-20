@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mrgrew
+      changes:
+        - createTable:
+            schemaName: stats
+            tableName: counter
+            columns:
+              - column:
+                  name: counter_id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: counter_name
+                  type: varchar(255)
