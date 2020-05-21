@@ -4,7 +4,6 @@ databaseChangeLog:
       author: mrgrew
       changes:
         - createTable:
-            schemaName: stats
             tableName: counter
             columns:
               - column:
